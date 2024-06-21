@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigtation</title>
+    <style>
+        .navbar{
+            background-color: rgb(255, 172, 62);
+            border-radius: 20px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float: left;
+            list-style: none;
+            padding: 3px 3px;
+            margin: 13px 20px;
+            font-size: 20px;
+
+        }
+
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar li a:hover{
+            color: white;
+        }
+
+        .search{
+            float: right;
+            padding: 3px 3px;
+            color: white;
+            margin: 4px 60px;
+            display: inline-block;
+
+        }
+
+        .navbar input{
+            margin: 10px 10px;
+            width: 200px;
+            border-radius: 10px;
+            height: 20px;
+            border: none;
+            display: inline-block;
+        }
+
+        .btn{
+            float: right;
+            display: inline-block;
+            position: absolute;
+            margin-top: 16px;
+            right: 15px;
+        }
+
+        .button:hover{
+            background: #FFAC3EFF;
+            color: white;
+        }
+
+        .button{
+            background: #535bf2;
+            color: white;
+            border-radius: 10px
+        }
+
+        .image{
+            width: fit-content;
+            position: absolute;
+            text-align: center;
+            right: 350px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar" >
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="search products">
+            </div>
+            <div class="btn">
+                <button class="button">Search</button>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="image">
+    <img  src="https://source.unsplash.com/user/erondu/500x500">
+</div>
+</body>
+</html>
